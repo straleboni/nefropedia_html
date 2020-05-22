@@ -1,0 +1,61 @@
+.nav {
+    &-item {
+        display: flex;
+        align-self: center;
+        margin-right: 1rem;
+        // &:not(:last-child) {
+        //     margin-right: 1.5rem;
+        // }
+    }
+    &-link {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $color-white;
+        text-transform: uppercase;
+        &:hover {
+            color: $color-blue-dark;
+        }
+        &:active {
+            color: $color-blue-dark;
+        }
+        &:focus {
+            color: $color-blue-dark;
+        }
+    }
+    a:active &-link,
+    a:focus &-link {
+        color: $color-blue-dark;
+    }
+}
+
+.navbar {
+    &-brand img {
+        // margin-left: -3rem;
+        // width: 16rem;
+        // height: auto;
+    }
+    &-toggler {
+        @media screen and (max-width: 992px) {
+            position: absolute;
+            right: -3rem;
+            top: 3rem;
+        }
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            right: -2rem;
+            top: 3rem;
+        }
+        @media screen and (max-width: 576px) {
+            position: absolute;
+            right: 0rem;
+            top: 3rem;
+        }
+        &-icon {
+            background-image: url(../img/meny.png) !important;
+            background-size: contain;
+            height: 2rem;
+            width: 4rem;
+        }
+    }
+}

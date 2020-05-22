@@ -1,0 +1,55 @@
+.button {
+    //border-radius: 3rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s;
+    // @media screen and (max-width: 480px) {
+    //     text-align: center;
+    //     margin: auto;
+    // }
+    &-medium {
+        padding: 1.3rem 2.2rem;
+    }
+    &-big {
+        padding: 2rem 3rem;
+    }
+    &:hover {
+        list-style-type: none;
+        text-decoration: none;
+        color: inherit;
+        transform: translateY(-3px);
+    }
+    &_width {
+        &-20 {
+            width: 20rem;
+        }
+        &-21 {
+            width: 21rem;
+        }
+        &-22 {
+            width: 22rem;
+        }
+    }
+    &_blue {
+        background-image: linear-gradient(to right, $color-blue-light 40%, $color-blue-dark 100%);
+        color: $color-white;
+        &:hover {
+            color: $color-white;
+        }
+    }
+    &_transparent {
+        border: 1px solid $color-white;
+        background-color: transparent;
+        color: $color-white;
+        margin: 0 auto;
+        &:hover {
+            color: $color-white;
+        }
+    }
+}

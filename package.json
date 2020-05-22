@@ -1,0 +1,24 @@
+{
+  "name": "nefropedia",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "Strahinja Stanojlovic",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/straleboni/nefropedia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/straleboni/nefropedia/issues"
+  },
+  "homepage": "https://github.com/straleboni/nefropedia#readme",
+  "description": ""
+}

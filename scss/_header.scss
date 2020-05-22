@@ -1,0 +1,25 @@
+.header {
+    font-family: 'Lato', sans-serif;
+    background-color: $color-purple;
+    height: 13.5rem;
+    .col-xl-3 {
+        display: none;
+    }
+    &-top {
+        height: 5rem;
+        border-bottom: 1px solid $color-silver;
+        width: 90%;
+        margin-left: 7%;
+    }
+    &-info {
+        margin-right: 3rem;
+        img {
+            padding-right: 1rem;
+        }
+    }
+    &-tel {
+        img {
+            padding-right: 1rem;
+        }
+    }
+}
