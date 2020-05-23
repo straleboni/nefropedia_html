@@ -94,10 +94,13 @@
     }
     &-item-first {
         .mask {
+            transform: rotateX(45deg);
+            transition: all 0.4s ease-in-out;
             opacity: 0;
         }
     }
     &-item-first:hover .mask {
+        transform: rotateX(0);
         opacity: 1;
     }
     &-hospital {}
