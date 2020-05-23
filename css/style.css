@@ -112,6 +112,17 @@ a {
     .button_transparent:hover {
       color: #ffffff; }
 
+.heading p {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.4rem; }
+
+.heading h4 {
+  font-weight: 800; }
+
+.fa-phone {
+  color: #ffffff; }
+
 .header {
   font-family: 'Lato', sans-serif;
   background-color: #3737d5;
@@ -200,3 +211,82 @@ a {
   background-size: contain;
   height: 2rem;
   width: 4rem; }
+
+.intro {
+  font-family: 'Lato', sans-serif;
+  color: #ffffff;
+  padding-top: 6rem; }
+  @media screen and (max-width: 767.98px) {
+    .intro-item {
+      margin-bottom: 3rem; } }
+  .intro h5 {
+    font-weight: 600; }
+  .intro p {
+    font-family: 'Roboto Slab', serif; }
+    .intro p:first-of-type {
+      font-family: 'Lato', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.4rem;
+      line-height: .5; }
+  .intro-emergency {
+    background-image: url(../img/help-bg.jpg);
+    background-size: cover;
+    padding: 3rem; }
+  .intro-clinic {
+    background-image: url(../img/location-bg.jpg);
+    background-size: cover;
+    padding: 3rem; }
+  .intro-schedule {
+    background-image: url(../img/need-help-bg.jpg);
+    background-size: cover;
+    padding: 3rem; }
+  .intro-bottom {
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-top: 2rem;
+    width: 43%; }
+    .intro-bottom i {
+      font-size: 1.6rem;
+      padding-bottom: .4rem; }
+    .intro-bottom a {
+      font-size: 1.4rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding-bottom: .4rem; }
+
+.service {
+  padding: 6rem 0; }
+  .service-item {
+    padding-top: 5rem;
+    width: 100%;
+    height: auto;
+    position: relative; }
+    @media screen and (max-width: 767.98px) {
+      .service-item {
+        margin-bottom: 3rem; } }
+    .service-item h6 {
+      font-weight: 800;
+      padding: 3rem 0; }
+    .service-item-image {
+      height: 5rem;
+      width: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+    .service-item .mask {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      overflow: hidden;
+      top: 5rem;
+      left: 0; }
+      .service-item .mask img {
+        transition: all 0.2s linear; }
+      .service-item .mask-bottom {
+        background-image: linear-gradient(to right, #21edda 40%, #00cdf4 100%);
+        color: #ffffff;
+        padding: 0 3rem; }
+  .service-item-first .mask {
+    opacity: 0; }
+  .service-item-first:hover .mask {
+    opacity: 1; }
