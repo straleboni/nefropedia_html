@@ -1,0 +1,123 @@
+.footer {
+    color: $color-white;
+    background-color: $color-purple;
+    height: 56rem;
+    @media screen and (max-width: 992px) {
+        height: auto;
+    }
+    &-top,
+    &-bottom {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        a::before,
+        a::after {
+            flex: 1;
+            content: '';
+            height: 1px;
+            background: $color-purple-light;
+            // margin-top: 5rem;
+        }
+        img {
+            padding: 0 2rem;
+        }
+    }
+    &-top {
+        padding: 4rem 0;
+        a::before,
+        a::after {
+            margin-top: 4.5rem;
+        }
+    }
+    &-bottom {
+        i {
+            padding: 0 2rem;
+            color: $color-white;
+            font-size: 1.8rem;
+            padding: 0 1rem;
+            &:first-of-type {
+                padding-left: 8.5rem;
+            }
+            &:last-of-type {
+                padding-right: 8.5rem;
+            }
+        }
+        &-down {
+            margin-bottom: 0;
+            p {
+                font-family: $lato;
+                font-weight: 400;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    &-first,
+    &-second {
+        ul {
+            li {
+                list-style: none;
+                text-decoration: none;
+                a {
+                    text-transform: uppercase;
+                    font-family: $lato;
+                    font-weight: 400;
+                    line-height: 3;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    &-third {
+        &-phone,
+        &-address {
+            i {
+                padding-right: 1rem;
+            }
+            a {
+                text-transform: uppercase;
+                font-family: $lato;
+                font-weight: 400;
+                display: inline-flex;
+                line-height: 1.8;
+                font-size: 1.2rem;
+            }
+        }
+        &-phone {
+            margin-left: -11rem;
+            a {
+                font-weight: 900;
+                line-height: 3;
+            }
+        }
+    }
+    &-newletter {
+        input[type="text"] {
+            font-family: inherit;
+            height: 4.5rem;
+            display: block;
+            width: 100%;
+            padding: .375rem .75rem;
+            font-size: 1.6rem;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #55595c;
+            background-color: #fff;
+            border: 1px solid #ebebeb;
+            border-width: 3px;
+            margin-top: 0;
+            resize: vertical;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &-center {
+        padding: 7rem 0;
+        @media screen and (max-width: 767.98px) {
+            text-align: center;
+        }
+    }
+}

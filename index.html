@@ -10,12 +10,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
     <!-- font-family: 'Lato', sans-serif; -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;600;900&display=swap" rel="stylesheet">
     <!-- font-family: 'Roboto Slab', serif; -->
-    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <!-- font-family: 'Karma', serif; -->
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <!-- font-family: 'Karla', sans-serif; -->
     <link rel="stylesheet" href="css/style.css">
 
     <title>Nefropedia</title>
@@ -27,7 +28,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xl-2 col-md-2 col-sm-2 col-2 d-flex align-items-center">
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Nefropedia"></a>
+                        <a class="navbar-brand" href="index.html"><img src="img/logo.png" class="logo" alt="Nefropedia"></a>
                     </div>
                     <div class="col-xl-10 col-md-10 col-sm-10 col-10">
                         <div class="header-top d-flex flex-row align-items-center justify-content-between">
@@ -71,7 +72,7 @@
                         <div class="header-cover-text">
                             <h2>NefroPedia é uma</h2>
                             <h1>clínica médica</h1>
-                            <p>especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica</p>
+                            <p class="pb-4">especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica</p>
                             <a href="#" class="button button-medium button_blue w-50">Book Appointment Today</a>
                         </div>
                     </div>
@@ -81,7 +82,7 @@
         <section class="intro">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-12 col-12">
                         <div class="intro-item intro-emergency">
                             <p>24/7</p>
                             <h5>Emergency cases</h5>
@@ -97,7 +98,7 @@
                             <h5>Main clinic</h5>
                             <p class="pt-4">Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
                             <div class="intro-bottom d-flex align-items-center justify-content-between">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i><a href="tel:1237890456"> Get direction</a>
+                                <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"> Get direction</a>
                             </div>
                         </div>
                     </div>
@@ -107,7 +108,7 @@
                             <h5>Schedule appointment</h5>
                             <p class="pt-4">Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
                             <div class="intro-bottom d-flex align-items-center justify-content-between">
-                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i><a href="tel:1237890456">Schedule</a>
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i><a href="#">Schedule</a>
                             </div>
                         </div>
                     </div>
@@ -123,9 +124,8 @@
                         <img src="img/heading-line.png" alt="">
                     </div>
                 </div>
-                <div class="row">
+                <div class="row service-row">
                     <div class="col-md-4">
-
                         <div class="service-item">
                             <div class="service-hospital text-center mx-auto">
                                 <div class="service-item-image mx-auto">
@@ -135,8 +135,6 @@
                                 <p>Lorem ipsum dolor sit amet, con sec cing elit. Aliq uam portti tor, nuncso content text will appear.</p>
                             </div>
                         </div>
-
-
                     </div>
                     <div class="col-md-4">
                         <div class="service-item service-item-first">
@@ -152,6 +150,7 @@
                             <div class="mask">
                                 <div class="mask-top">
                                     <img src="img/service-ambulance.jpg" alt="">
+                                    <div class="plus"></div>
                                 </div>
                                 <div class="mask-bottom d-flex align-items-center justify-content-between">
                                     <img src="img/service-ambulance-icon.png" alt="">
@@ -176,10 +175,427 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="heading text-center mx-auto">
+                        <img src="img/heading-line.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-2">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="specialist" data-toggle="tab" href="#qualified_specialist" role="tab" aria-controls="home" aria-selected="true"><img src="img/service-specialist-icon.png">Highly qualified <br>specialists<i class="arrow arrow-white"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="professional" data-toggle="tab" href="#professional_approach" role="tab" aria-controls="profile" aria-selected="false"><img src="img/service-hospital-icon.png">Professional <br>approach<i class="arrow arrow-white"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="care" data-toggle="tab" href="#hig_level_care" role="tab" aria-controls="contact" aria-selected="false"><img src="img/service-ambulance-blue-icon.png">High level <br>care<i class="arrow arrow-white"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="medical" data-toggle="tab" href="#medical_care" role="tab" aria-controls="contact" aria-selected="false"><img src="img/service-24-icon.png">24/7 <br>medical care<i class="arrow arrow-white"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-10">
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="qualified_specialist" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="container">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-left">
+                                                <img src="img/intro-doctor.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-right">
+                                                <div class="header-cover-text">
+                                                    <h3>NefroPedia é uma</h3>
+                                                    <h3>clínica médica</h3>
+                                                    <p>especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica. </p>
+                                                    <p class="pt-5 pb-5">Fundada em 2017, a clínica tem como o seu objetivo principal prover os cuidados de excelência referente aos problemas do aparelho urinário de todas as complexidades e de saúde em geral de crianças e
+                                                        adolescentes, em todos os níveis da atenção à saúde.</p>
+                                                    <a href="#" class="button button-medium button_blue w-50">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="professional_approach" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-left">
+                                                <img src="img/intro-doctor.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-right">
+                                                <div class="header-cover-text">
+                                                    <h3>NefroPedia é uma</h3>
+                                                    <h3>clínica médica</h3>
+                                                    <p>especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica. </p>
+                                                    <p class="pt-5 pb-5">Fundada em 2017, a clínica tem como o seu objetivo principal prover os cuidados de excelência referente aos problemas do aparelho urinário de todas as complexidades e de saúde em geral de crianças e
+                                                        adolescentes, em todos os níveis da atenção à saúde.</p>
+                                                    <a href="#" class="button button-medium button_blue w-50">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="hig_level_care" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="container">
+                                    <div class="row d-flex align-items-center">
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-left">
+                                                <img src="img/intro-doctor.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-right">
+                                                <div class="header-cover-text">
+                                                    <h3>NefroPedia é uma</h3>
+                                                    <h3>clínica médica</h3>
+                                                    <p>especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica. </p>
+                                                    <p class="pt-5 pb-5">Fundada em 2017, a clínica tem como o seu objetivo principal prover os cuidados de excelência referente aos problemas do aparelho urinário de todas as complexidades e de saúde em geral de crianças e
+                                                        adolescentes, em todos os níveis da atenção à saúde.</p>
+                                                    <a href="#" class="button button-medium button_blue w-50">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="medical_care" role="tabpanel" aria-labelledby="contact-tab">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-left">
+                                                <img src="img/intro-doctor.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="tab-pane-right">
+                                                <div class="header-cover-text">
+                                                    <h3>NefroPedia é uma</h3>
+                                                    <h3>clínica médica</h3>
+                                                    <p>especializada em prestar atendimento ambulatorial e hospitalar na área de nefrologia pediátrica. </p>
+                                                    <p class="pt-5 pb-5">Fundada em 2017, a clínica tem como o seu objetivo principal prover os cuidados de excelência referente aos problemas do aparelho urinário de todas as complexidades e de saúde em geral de crianças e
+                                                        adolescentes, em todos os níveis da atenção à saúde.</p>
+                                                    <a href="#" class="button button-medium button_blue w-50">Read more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image"></div>
+        </section>
+        <section class="team">
+            <div class="container">
+                <div class="row">
+                    <div class="heading text-center mx-auto">
+                        <p>our</p>
+                        <h4>Da nossa equipe</h4>
+                        <img src="img/heading-line.png" alt="">
+                    </div>
+                </div>
+                <div class="row team-row">
+                    <div class="col-md-3">
+                        <div class="card team-card">
+                            <img class="card-img-top" src="img/team-person.jpg" alt="Card image cap">
+                            <div class="card-body team-body text-center d-flex flex-column justify-content-center">
+                                <p>Drª Ana Claudia <span> de Aquino Carneiro Lacerda</span></p>
+
+                                <p>Doctor</p>
+                            </div>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card team-card">
+                            <img class="card-img-top" src="img/team-person.jpg" alt="Card image cap">
+                            <div class="card-body team-body text-center d-flex flex-column justify-content-center">
+                                <p>Drª Bruna<span> Moreira</span></p>
+
+                                <p>Doctor</p>
+                            </div>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card team-card">
+                            <img class="card-img-top" src="img/team-person.jpg" alt="Card image cap">
+                            <div class="card-body team-body text-center d-flex flex-column justify-content-center">
+                                <p>Drª dusan <span> kostic</span></p>
+
+                                <p>Doctor</p>
+                            </div>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card team-card">
+                            <img class="card-img-top" src="img/team-person.jpg" alt="Card image cap">
+                            <div class="card-body team-body text-center d-flex flex-column justify-content-center">
+                                <p>Drª Marcela<span> pandolfi</span></p>
+
+                                <p>Doctor</p>
+                            </div>
+                            <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="button button-medium button_blue button_width-20 mx-auto">SEE ENTIRE TEAM</a>
+                </div>
+            </div>
+        </section>
+        <section class="testimonial">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="heading text-center mx-auto">
+                        <h4>What our clients says</h4>
+                        <img src="img/heading-line.png" alt="">
+                    </div>
+                </div>
+                <div class="testimonial-clients">
+                    <div class="row">
+                        <div class="owl-carousel">
+                            <div class="testimonial-clients-item text-center">
+                                <img src="img/client-person.jpg" alt="">
+                                <h6 class="pt-4 pb-4">PATRIK MICHALICKA</h6>
+                                <p>Lorem ipsum dolor sit amet, con sec cing elit. Aliq uam portti tor, nuncso content text will appear.</p>
+                                <div class="testimonial-clients-item-stars pt-4">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-clients-item text-center">
+                                <img src="img/client-person.jpg" alt="">
+                                <h6 class="pt-4 pb-4">PATRIK MICHALICKA</h6>
+                                <p>Lorem ipsum dolor sit amet, con sec cing elit. Aliq uam portti tor, nuncso content text will appear.</p>
+                                <div class="testimonial-clients-item-stars pt-4">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-clients-item text-center">
+                                <img src="img/client-person.jpg" alt="">
+                                <h6 class="pt-4 pb-4">PATRIK MICHALICKA</h6>
+                                <p>Lorem ipsum dolor sit amet, con sec cing elit. Aliq uam portti tor, nuncso content text will appear.</p>
+                                <div class="testimonial-clients-item-stars pt-4">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="testimonial-clients-item text-center">
+                                <img src="img/client-person.jpg" alt="">
+                                <h6 class="pt-4 pb-4">PATRIK MICHALICKA</h6>
+                                <p>Lorem ipsum dolor sit amet, con sec cing elit. Aliq uam portti tor, nuncso content text will appear.</p>
+                                <div class="testimonial-clients-item-stars pt-4">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <div class="container">
+            <div class="row">
+                <div class="heading text-center mx-auto">
+                    <img src="img/heading-line.png" alt="">
+                </div>
+            </div>
+        </div>
+        <section class="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="heading text-center mx-auto">
+                        <img src="img/book-appointment.png" alt="">
+                        <h4 class="pt-5">Book an appointment</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>I would like to discuss</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <input type="text" class="form-control" placeholder="Your Full Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <input type="number" class="form-control" placeholder="Your Phone Number">
+                                </div>
+                                <div class="col-6">
+                                    <input placeholder="Visit date" class="form-control" type="text" onfocusin="(this.type='date')" onfocusout="(this.type='text')" id="date">
+
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col-6">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                                <div class="col-6">
+                                    <input type="submit" value="Schedule appointment" class="button button-medium w-100 button-bg" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="intro intro-last">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="intro-item intro-emergency">
+                            <p>24/7</p>
+                            <h5>Emergency cases</h5>
+                            <p class="pt-4">Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
+                            <div class="intro-bottom d-flex align-items-center justify-content-between">
+                                <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:1237890456"> 123 7890 456</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-item intro-clinic">
+                            <p>Location</p>
+                            <h5>Main clinic</h5>
+                            <p class="pt-4">Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
+                            <div class="intro-bottom d-flex align-items-center justify-content-between">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"> Get direction</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="intro-item intro-schedule">
+                            <p>Need help</p>
+                            <h5>Schedule appointment</h5>
+                            <p class="pt-4">Lorem ipsum dolor sit amet, consectet uam porttitor, nunc et fringilla.</p>
+                            <div class="intro-bottom d-flex align-items-center justify-content-between">
+                                <i class="fa fa-calendar-check-o" aria-hidden="true"></i><a href="#">Schedule</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer d-flex flex-column justify-content-between">
+            <div class="footer-top">
+                <a href="#">
+                    <img src="img/logo.png">
+                </a>
+            </div>
+            <div class="footer-center">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="footer-first">
+                                <ul>
+                                    <li><a href="#">Da empresa</a></li>
+                                    <li><a href="#">Áreas de atuação</a></li>
+                                    <li><a href="#">Atendimento</a></li>
+                                    <li><a href="#">equipe</a></li>
+                                    <li><a href="#">NOVIDADES</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="footer-second">
+                                <ul>
+                                    <li><a href="#">contato</a></li>
+                                    <li><a href="#">location</a></li>
+                                    <li><a href="#">book appointment</a></li>
+                                    <li><a href="#">knowledgebase</a></li>
+                                    <li><a href="#">contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-third d-flex flex-column align-items-center justify-content-center">
+                                <div class="footer-third-address">
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i><a href="#"> Streetname 123, Entrance 1 <br> SAO PAOLO 12345</a>
+                                </div>
+                                <div class="footer-third-phone">
+                                    <i class="fa fa-phone" aria-hidden="true"></i><a href="tel:1237890456"> 123 7890 456</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="footer-newletter">
+                                <div class="container p-3">
+                                    <form action="#" method="Post">
+                                        <input type="text" name="text" placeholder="Enter Your Email Address">
+                                        <a href="#" class="button button-medium button_blue button_width-100 mx-auto">Submit</a>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <a href="#">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="footer-bottom-down">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p class="pt-2 pb-2">© 2020 All rights reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

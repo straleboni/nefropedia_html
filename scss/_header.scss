@@ -1,5 +1,5 @@
 .header {
-    font-family: 'Lato', sans-serif;
+    font-family: $lato;
     background-color: $color-purple;
     height: 13.5rem;
     position: relative;
@@ -11,14 +11,23 @@
         border-bottom: 1px solid $color-silver;
         width: 90%;
         margin-left: 7%;
+        &-left {
+            color: $color-white;
+        }
     }
     &-info {
         margin-right: 3rem;
+        font-family: $lato;
+        font-weight: 300;
+        font-size: 1.4rem;
         img {
             padding-right: 1rem;
         }
     }
     &-tel {
+        font-family: $lato;
+        font-weight: 600;
+        font-size: 1.4rem;
         img {
             padding-right: 1rem;
         }
@@ -41,6 +50,17 @@
             h1,
             h2 {
                 font-weight: 800;
+            }
+            p {
+                font-size: 1.793rem;
+                font-weight: 400;
+            }
+            @media screen and (max-width: 575.98px) {
+                text-align: center;
+                a {
+                    margin: auto;
+                    padding: 2rem 1rem;
+                }
             }
         }
     }

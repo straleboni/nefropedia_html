@@ -9,10 +9,18 @@
     align-items: center;
     justify-content: space-around;
     transition: all .5s;
-    // @media screen and (max-width: 480px) {
-    //     text-align: center;
-    //     margin: auto;
-    // }
+    &-bg {
+        background-image: url(../img/scheadule-btn.png), linear-gradient(to right, $color-blue-light, $color-blue-dark);
+        background-position: right;
+        background-repeat: no-repeat;
+        border: transparent;
+        color: $color-white;
+        height: 5rem;
+        font-size: 1.8rem;
+        &:hover {
+            color: $color-white;
+        }
+    }
     &-medium {
         padding: 1.3rem 2.2rem;
     }
@@ -24,6 +32,9 @@
         text-decoration: none;
         color: inherit;
         transform: translateY(-3px);
+    }
+    &:focus {
+        outline: none;
     }
     &_width {
         &-20 {
@@ -56,17 +67,50 @@
 
 .heading {
     p {
-        font-family: "Lato", sans-serif;
+        font-family: $lato;
         text-transform: uppercase;
         font-size: 1.4rem;
+        // font-weight: 400;
     }
     h4 {
         font-weight: 800;
+    }
+    img {
+        padding-top: 1rem;
     }
 }
 
 .fa {
     &-phone {
         color: $color-white;
+    }
+}
+
+.form {
+    &-control {
+        font-family: inherit;
+        height: 4rem;
+        display: block;
+        width: 100%;
+        padding: .375rem .75rem;
+        font-size: 1.8rem;
+        font-weight: 300;
+        line-height: 1.5;
+        color: #55595c;
+        background-color: #fff;
+        border: 1px solid #ebebeb;
+        border-width: 3px;
+        margin-top: 1rem;
+        resize: vertical;
+        margin-bottom: 4rem;
+    }
+}
+
+.owl-item {
+    &:first-of-type {
+        margin-left: 9%;
+        @media screen and (max-width: 479.98px) {
+            margin-left: 2%;
+        }
     }
 }
