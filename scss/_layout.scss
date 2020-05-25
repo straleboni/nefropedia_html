@@ -10,11 +10,15 @@
         padding: 6rem 1.5rem;
     }
     &-item {
+        transition: all .5s;
         @media screen and (max-width: 767.98px) {
             margin-bottom: 3rem;
         }
         @media screen and (max-width: 399.98px) {
             margin-bottom: 3rem;
+        }
+        &:hover {
+            transform: translateY(-3px);
         }
     }
     h5 {
@@ -69,7 +73,7 @@
     &-item {
         padding-top: 5rem;
         @media screen and (max-width: 767.98px) {
-            margin-bottom: 3rem;
+            margin-bottom: 16rem;
         }
         h6 {
             font-weight: 800;
@@ -84,6 +88,7 @@
         }
         p {
             color: $color-regular;
+            transition: all .5s linear;
         }
         width: 100%;
         height: auto;
@@ -98,6 +103,7 @@
             left: 0;
             right: 0;
             border: 1px solid $color-blue-light;
+            box-shadow: 0 1rem 3rem rgba($color-font-grey, .6);
             img {
                 transition: all 0.2s linear;
             }
@@ -111,23 +117,29 @@
             &-bottom {
                 background-image: linear-gradient(to right, $color-blue-light 40%, $color-blue-dark 100%);
                 color: $color-white;
-                padding: 0 3rem;
+                padding: 0 2rem;
                 max-height: 6rem;
+                h6 {
+                    opacity: 1 !important;
+                }
+            }
+        }
+        &:hover {
+            p,
+            h6 {
+                opacity: 0;
             }
         }
     }
     &-item-first {
         .mask {
-            transform: scale(1.1);
+            // transform: scale(1.1);
             transition: all 0.4s ease-in-out;
             opacity: 0;
         }
     }
     &-item-first:hover .mask {
         opacity: 1;
-        &-item-first {
-            opacity: 0;
-        }
     }
     &-hospital {}
     &-ambulance {}
@@ -272,7 +284,11 @@
     &-clients {
         padding: 7rem 0;
         &-item {
+            transition: all .5s;
             width: 30rem;
+            height: auto;
+            padding: 3rem 2rem;
+            border: 2px solid transparent;
             h6 {
                 font-size: 1.8rem;
                 font-family: $lato;
@@ -290,6 +306,10 @@
                         padding-left: 1rem;
                     }
                 }
+            }
+            &:hover {
+                border: 2px solid $color-silver;
+                box-shadow: 0rem 1rem 3rem rgba($color-font-grey, .3);
             }
         }
     }

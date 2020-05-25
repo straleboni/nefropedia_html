@@ -36,7 +36,7 @@
     &:hover {
         list-style-type: none;
         text-decoration: none;
-        color: inherit;
+        color: $color-white;
         transform: translateY(-3px);
     }
     &:focus {
@@ -94,7 +94,7 @@
 .form {
     &-control {
         font-family: inherit;
-        height: 4rem;
+        height: 5rem;
         display: block;
         width: 100%;
         padding: .375rem .75rem;

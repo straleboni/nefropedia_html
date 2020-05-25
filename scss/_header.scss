@@ -53,11 +53,26 @@
             h1,
             h2 {
                 font-weight: 800;
+                line-height: 1;
+            }
+            h1 {
+                animation: moveInLeft .8s ease-out .75s;
+                animation-fill-mode: backwards;
+            }
+            h2 {
+                animation: moveInRight .8s ease-out .75s;
+                animation-fill-mode: backwards;
             }
             p {
+                animation: moveInBottom .8s ease-out .75s;
+                animation-fill-mode: backwards;
                 font-size: 1.793rem;
                 font-weight: 400;
                 color: $color-client-text;
+            }
+            a {
+                animation: moveInBottom .8s ease-out .75s;
+                animation-fill-mode: backwards;
             }
             @media screen and (max-width: 575.98px) {
                 text-align: center;
