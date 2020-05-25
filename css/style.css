@@ -76,7 +76,8 @@ a {
 
 .button {
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 800;
+  font-family: "Lato", sans-serif;
   text-align: center;
   text-transform: uppercase;
   display: flex;
@@ -91,7 +92,12 @@ a {
     border: transparent;
     color: #ffffff;
     height: 5rem;
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+    font-family: "Lato", sans-serif;
+    font-weight: 800; }
+    @media screen and (max-width: 575.98px) {
+      .button-bg {
+        font-size: 1.4rem; } }
     .button-bg:hover {
       color: #ffffff; }
   .button-medium {
@@ -145,11 +151,11 @@ a {
   width: 100%;
   padding: .375rem .75rem;
   font-size: 1.8rem;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.5;
-  color: #55595c;
-  background-color: #fff;
-  border: 1px solid #ebebeb;
+  color: #657188;
+  background-color: #ffffff;
+  border: 1px solid #e5f0fb;
   border-width: 3px;
   margin-top: 1rem;
   resize: vertical;
@@ -166,8 +172,6 @@ a {
   background-color: #3737d5;
   height: 13.5rem;
   position: relative; }
-  .header .col-xl-3 {
-    display: none; }
   .header-top {
     height: 5rem;
     border-bottom: 1px solid #e5f0fb;
@@ -180,12 +184,18 @@ a {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 1.4rem; }
+    @media screen and (max-width: 385.98px) {
+      .header-info {
+        font-size: 1rem; } }
     .header-info img {
       padding-right: 1rem; }
   .header-tel {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-size: 1.4rem; }
+    @media screen and (max-width: 385.98px) {
+      .header-tel {
+        font-size: 1rem; } }
     .header-tel img {
       padding-right: 1rem; }
   .header-cover {
@@ -206,7 +216,8 @@ a {
       font-weight: 800; }
     .header-cover-text p {
       font-size: 1.793rem;
-      font-weight: 400; }
+      font-weight: 400;
+      color: #657188; }
     @media screen and (max-width: 575.98px) {
       .header-cover-text {
         text-align: center; }
@@ -283,11 +294,11 @@ a {
     width: 100%;
     padding: .375rem .75rem;
     font-size: 1.6rem;
-    font-weight: 300;
+    font-weight: 600;
     line-height: 1.5;
-    color: #55595c;
-    background-color: #fff;
-    border: 1px solid #ebebeb;
+    color: #5d5d5d;
+    background-color: #ffffff;
+    border: 1px solid #e5f0fb;
     border-width: 3px;
     margin-top: 0;
     resize: vertical;
@@ -295,6 +306,10 @@ a {
     text-align: center; }
     .footer-newletter input[type="text"]:focus {
       outline: none; }
+  .footer-newletter .button {
+    font-family: "Karla", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800; }
   .footer-center {
     padding: 7rem 0; }
     @media screen and (max-width: 767.98px) {
@@ -339,6 +354,9 @@ a {
     color: #00cdf4; }
   .navbar-nav .nav-link:focus {
     color: #00cdf4; }
+  @media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
+    .navbar-nav .nav-link {
+      font-size: 1rem; } }
 
 .navbar-nav .nav-link:visited > .navbar-nav .nav-item::after {
   background-color: #00cdf4; }

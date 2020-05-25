@@ -17,7 +17,6 @@
             content: '';
             height: 1px;
             background: $color-purple-light;
-            // margin-top: 5rem;
         }
         img {
             padding: 0 2rem;
@@ -99,11 +98,11 @@
             width: 100%;
             padding: .375rem .75rem;
             font-size: 1.6rem;
-            font-weight: 300;
+            font-weight: 600;
             line-height: 1.5;
-            color: #55595c;
-            background-color: #fff;
-            border: 1px solid #ebebeb;
+            color: $color-client-title;
+            background-color: $color-white;
+            border: 1px solid $color-silver;
             border-width: 3px;
             margin-top: 0;
             resize: vertical;
@@ -112,6 +111,11 @@
             &:focus {
                 outline: none;
             }
+        }
+        .button {
+            font-family: $karla;
+            font-size: 1.6rem;
+            font-weight: 800;
         }
     }
     &-center {
