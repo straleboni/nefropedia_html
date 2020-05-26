@@ -153,13 +153,16 @@ a {
   font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #657188;
+  color: #979ead !important;
   background-color: #ffffff;
   border: 1px solid #e5f0fb;
   border-width: 3px;
   margin-top: 1rem;
   resize: vertical;
   margin-bottom: 4rem; }
+
+.form-row label {
+  width: 100%; }
 
 .owl-item:first-of-type {
   margin-left: 9%; }
@@ -185,6 +188,10 @@ a {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 1.4rem; }
+    .header-info a {
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 1.4rem; }
     @media screen and (max-width: 385.98px) {
       .header-info {
         font-size: 1rem; } }
@@ -194,6 +201,10 @@ a {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-size: 1.4rem; }
+    .header-tel a {
+      font-family: "Lato", sans-serif;
+      font-weight: 600;
+      font-size: 1.4rem; }
     @media screen and (max-width: 385.98px) {
       .header-tel {
         font-size: 1rem; } }
@@ -214,7 +225,7 @@ a {
         min-height: 40rem; } }
     .header-cover-text h1,
     .header-cover-text h2 {
-      font-weight: 800;
+      font-weight: 900;
       line-height: 1; }
     .header-cover-text h1 {
       animation: moveInLeft .8s ease-out .75s;
@@ -300,7 +311,8 @@ a {
     .footer-third-phone a {
       font-weight: 900;
       line-height: 3; }
-  .footer-newletter input[type="text"] {
+  .footer-newletter input[type="text"],
+  .footer-newletter input[type="email"] {
     font-family: inherit;
     height: 4.5rem;
     display: block;
@@ -312,17 +324,36 @@ a {
     color: #5d5d5d;
     background-color: #ffffff;
     border: 1px solid #e5f0fb;
-    border-width: 3px;
     margin-top: 0;
     resize: vertical;
     margin-bottom: 1.5rem;
     text-align: center; }
-    .footer-newletter input[type="text"]:focus {
+    .footer-newletter input[type="text"]:focus,
+    .footer-newletter input[type="email"]:focus {
+      outline: none; }
+  .footer-newletter input[type="submit"] {
+    font-family: inherit;
+    height: 4.5rem;
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: #ffffff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-top: 0;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+    text-align: center; }
+    .footer-newletter input[type="submit"]:focus {
       outline: none; }
   .footer-newletter .button {
     font-family: "Karla", sans-serif;
     font-size: 1.6rem;
-    font-weight: 800; }
+    font-weight: 800;
+    color: #ffffff; }
   .footer-center {
     padding: 7rem 0; }
     @media screen and (max-width: 767.98px) {
@@ -402,6 +433,7 @@ a {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
+    line-height: 1.2;
     text-transform: uppercase;
     font-family: "Lato", sans-serif;
     color: #404d5f;
@@ -451,16 +483,16 @@ input[type="date"]:not(.has-value):before {
     .intro-item:hover {
       transform: translateY(-3px); }
   .intro h5 {
-    font-weight: 600; }
+    font-weight: 800; }
   .intro p {
-    font-family: "Karla", sans-serif;
+    font-family: "Roboto Slab", serif;
     font-size: 1.6rem; }
     .intro p:first-of-type {
       font-family: "Lato", sans-serif;
       text-transform: uppercase;
       font-size: 1.4rem;
       line-height: .5;
-      font-weight: 400; }
+      font-weight: 300; }
   .intro-emergency {
     background-image: url(../img/help-bg.jpg);
     background-size: cover;
@@ -484,7 +516,7 @@ input[type="date"]:not(.has-value):before {
     .intro-bottom a {
       font-size: 1.4rem;
       text-transform: uppercase;
-      font-weight: 600;
+      font-weight: 800;
       padding-bottom: .4rem; }
 
 .service {
@@ -499,7 +531,7 @@ input[type="date"]:not(.has-value):before {
       .service-item {
         margin-bottom: 16rem; } }
     .service-item h6 {
-      font-weight: 800;
+      font-weight: 900;
       padding: 3rem 0; }
     .service-item-image {
       height: 5rem;
@@ -508,7 +540,7 @@ input[type="date"]:not(.has-value):before {
       align-items: center;
       justify-content: center; }
     .service-item p {
-      color: #979ead;
+      color: #657188;
       transition: all .5s linear; }
     .service-item .mask {
       width: 100%;
@@ -518,7 +550,6 @@ input[type="date"]:not(.has-value):before {
       top: 0rem;
       left: 0;
       right: 0;
-      border: 1px solid #21edda;
       box-shadow: 0 1rem 3rem rgba(64, 77, 95, 0.6); }
       .service-item .mask img {
         transition: all 0.2s linear; }
@@ -588,7 +619,8 @@ input[type="date"]:not(.has-value):before {
       .about .nav-item:not(:first-of-type) {
         margin-left: 1%; } }
   .about .header-cover-text h3 {
-    font-weight: 800; }
+    font-weight: 800;
+    line-height: 1.1; }
   .about .header-cover-text p:last-of-type {
     color: #979ead; }
 
@@ -614,7 +646,7 @@ input[type="date"]:not(.has-value):before {
       line-height: 1; }
     .team-card p:nth-child(2) {
       font-family: "Roboto Slab", serif;
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       font-weight: 400;
       line-height: 1;
       color: #3737d5; }
@@ -636,7 +668,7 @@ input[type="date"]:not(.has-value):before {
   .team-body {
     min-height: 11rem; }
   .team-row {
-    padding: 5rem 0; }
+    padding: 4.2rem 0; }
 
 .testimonial {
   padding: 6rem 0; }
@@ -646,8 +678,7 @@ input[type="date"]:not(.has-value):before {
       transition: all .5s;
       width: 30rem;
       height: auto;
-      padding: 3rem 2rem;
-      border: 2px solid transparent; }
+      padding: 3rem 2rem; }
       .testimonial-clients-item h6 {
         font-size: 1.8rem;
         font-family: "Lato", sans-serif;
@@ -660,9 +691,10 @@ input[type="date"]:not(.has-value):before {
         color: #ffc002; }
         .testimonial-clients-item-stars i:not(:first-of-type) {
           padding-left: 1rem; }
+      .testimonial-clients-item-stars br {
+        display: none; }
       .testimonial-clients-item:hover {
-        border: 2px solid #e5f0fb;
-        box-shadow: 0rem 1rem 3rem rgba(64, 77, 95, 0.3); }
+        box-shadow: 1rem 6rem 29rem rgba(64, 77, 95, 0.3); }
 
 .contact {
   padding: 7rem 0; }

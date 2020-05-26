@@ -22,7 +22,7 @@
         }
     }
     h5 {
-        font-weight: 600;
+        font-weight: 800;
     }
     p {
         &:first-of-type {
@@ -30,9 +30,9 @@
             text-transform: uppercase;
             font-size: 1.4rem;
             line-height: .5;
-            font-weight: 400;
+            font-weight: 300;
         }
-        font-family: $karla;
+        font-family: $roboto;
         font-size: 1.6rem;
     }
     &-emergency {
@@ -62,7 +62,7 @@
         a {
             font-size: 1.4rem;
             text-transform: uppercase;
-            font-weight: 600;
+            font-weight: 800;
             padding-bottom: .4rem;
         }
     }
@@ -76,7 +76,7 @@
             margin-bottom: 16rem;
         }
         h6 {
-            font-weight: 800;
+            font-weight: 900;
             padding: 3rem 0;
         }
         &-image {
@@ -87,7 +87,7 @@
             justify-content: center;
         }
         p {
-            color: $color-regular;
+            color: $color-client-text;
             transition: all .5s linear;
         }
         width: 100%;
@@ -102,7 +102,6 @@
             top: 0rem;
             left: 0;
             right: 0;
-            border: 1px solid $color-blue-light;
             box-shadow: 0 1rem 3rem rgba($color-font-grey, .6);
             img {
                 transition: all 0.2s linear;
@@ -133,7 +132,6 @@
     }
     &-item-first {
         .mask {
-            // transform: scale(1.1);
             transition: all 0.4s ease-in-out;
             opacity: 0;
         }
@@ -213,6 +211,7 @@
     .header-cover-text {
         h3 {
             font-weight: 800;
+            line-height: 1.1;
         }
         p {
             &:last-of-type {
@@ -247,7 +246,7 @@
             }
             &:nth-child(2) {
                 font-family: $roboto;
-                font-size: 1.3rem;
+                font-size: 1.4rem;
                 font-weight: 400;
                 line-height: 1;
                 color: $color-purple;
@@ -275,7 +274,7 @@
         min-height: 11rem;
     }
     &-row {
-        padding: 5rem 0;
+        padding: 4.2rem 0;
     }
 }
 
@@ -288,7 +287,6 @@
             width: 30rem;
             height: auto;
             padding: 3rem 2rem;
-            border: 2px solid transparent;
             h6 {
                 font-size: 1.8rem;
                 font-family: $lato;
@@ -306,10 +304,12 @@
                         padding-left: 1rem;
                     }
                 }
+                br {
+                    display: none;
+                }
             }
             &:hover {
-                border: 2px solid $color-silver;
-                box-shadow: 0rem 1rem 3rem rgba($color-font-grey, .3);
+                box-shadow: 1rem 6rem 29rem rgba($color-font-grey, .3);
             }
         }
     }

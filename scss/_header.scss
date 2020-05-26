@@ -18,6 +18,11 @@
         font-family: $lato;
         font-weight: 300;
         font-size: 1.4rem;
+        a {
+            font-family: $lato;
+            font-weight: 300;
+            font-size: 1.4rem;
+        }
         @media screen and (max-width: 385.98px) {
             font-size: 1rem;
         }
@@ -29,6 +34,11 @@
         font-family: $lato;
         font-weight: 600;
         font-size: 1.4rem;
+        a {
+            font-family: $lato;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
         @media screen and (max-width: 385.98px) {
             font-size: 1rem;
         }
@@ -53,7 +63,7 @@
         &-text {
             h1,
             h2 {
-                font-weight: 800;
+                font-weight: 900;
                 line-height: 1;
             }
             h1 {
