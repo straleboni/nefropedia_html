@@ -1,6 +1,9 @@
 .button {
     //border-radius: 3rem;
     font-size: 1.4rem;
+    @media screen and (max-width: 991.98px) {
+        font-size: 1rem;
+    }
     font-weight: 800;
     font-family: $lato;
     text-align: center;

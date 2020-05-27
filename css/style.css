@@ -85,6 +85,9 @@ a {
   align-items: center;
   justify-content: space-around;
   transition: all .5s; }
+  @media screen and (max-width: 991.98px) {
+    .button {
+      font-size: 1rem; } }
   .button-bg {
     background-image: url(../img/scheadule-btn.png), linear-gradient(to right, #21edda, #00cdf4);
     background-position: right;
@@ -188,10 +191,16 @@ a {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-size: 1.4rem; }
+    @media screen and (max-width: 400.98px) {
+      .header-info {
+        font-size: 1rem; } }
     .header-info a {
       font-family: "Lato", sans-serif;
       font-weight: 300;
       font-size: 1.4rem; }
+      @media screen and (max-width: 400.98px) {
+        .header-info a {
+          font-size: 1rem; } }
     @media screen and (max-width: 385.98px) {
       .header-info {
         font-size: 1rem; } }
@@ -201,10 +210,16 @@ a {
     font-family: "Lato", sans-serif;
     font-weight: 600;
     font-size: 1.4rem; }
+    @media screen and (max-width: 400.98px) {
+      .header-tel {
+        font-size: 1rem; } }
     .header-tel a {
       font-family: "Lato", sans-serif;
       font-weight: 600;
       font-size: 1.4rem; }
+      @media screen and (max-width: 400.98px) {
+        .header-tel a {
+          font-size: 1rem; } }
     @media screen and (max-width: 385.98px) {
       .header-tel {
         font-size: 1rem; } }
@@ -248,6 +263,10 @@ a {
         .header-cover-text a {
           margin: auto;
           padding: 2rem 1rem; } }
+
+@media screen and (max-width: 400.98px) {
+  .out-nav {
+    margin-right: -2rem; } }
 
 .footer {
   color: #ffffff;
@@ -306,11 +325,9 @@ a {
     display: inline-flex;
     line-height: 1.8;
     font-size: 1.2rem; }
-  .footer-third-phone {
-    margin-left: -11rem; }
-    .footer-third-phone a {
-      font-weight: 900;
-      line-height: 3; }
+  .footer-third-phone a {
+    font-weight: 900;
+    line-height: 3; }
   .footer-newletter input[type="text"],
   .footer-newletter input[type="email"] {
     font-family: inherit;
@@ -360,13 +377,13 @@ a {
       .footer-center {
         text-align: center; } }
 
-.navbar-nav .nav-item {
+.nav-item {
   display: flex;
   align-self: center;
   margin-right: 1rem;
   position: relative;
   transition: all .5s; }
-  .navbar-nav .nav-item::after {
+  .nav-item::after {
     content: "";
     display: inline-block;
     position: absolute;
@@ -386,33 +403,39 @@ a {
     transition: width 0.3s;
     transition: all .5s; }
 
-.navbar-nav .nav-link {
+.nav-link {
   font-family: "Lato", sans-serif;
   font-size: 1.4rem;
   height: 3rem;
   font-weight: 400;
   color: #ffffff;
   text-transform: uppercase; }
-  .navbar-nav .nav-link:hover {
+  .nav-link:hover {
     color: #00cdf4; }
-  .navbar-nav .nav-link:active {
+  .nav-link:active {
     color: #00cdf4; }
-  .navbar-nav .nav-link:focus {
+  .nav-link:focus {
     color: #00cdf4; }
   @media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
-    .navbar-nav .nav-link {
+    .nav-link {
       font-size: 1rem; } }
 
-.navbar-nav .nav-link:visited > .navbar-nav .nav-item::after {
+.nav-link:visited > .nav-item::after {
   background-color: #00cdf4; }
 
-.navbar-nav .nav-item .navbar-nav .nav:visited-item::after {
+.nav-item .nav:visited-item::after {
   background-color: #00cdf4; }
 
-.navbar-nav .nav-item:hover::after {
+.nav-item:hover::after {
   background-color: #00cdf4; }
 
-.navbar-nav .navbar-toggler-icon {
+@media screen and (max-width: 991.98px) {
+  .navbar-nav {
+    background-color: #00cdf4;
+    border-radius: 3rem;
+    padding: 2rem; } }
+
+.navbar-toggler span {
   background-image: url(../img/meny.png) !important;
   background-size: contain;
   height: 2rem;
@@ -455,7 +478,7 @@ img.logo {
   display: inline-block; }
   @media screen and (max-width: 479.98px) {
     img.logo {
-      width: 18rem;
+      width: 15rem;
       height: auto; } }
 
 input[type="date"]:not(.has-value):before {
@@ -496,14 +519,17 @@ input[type="date"]:not(.has-value):before {
   .intro-emergency {
     background-image: url(../img/help-bg.jpg);
     background-size: cover;
+    background-position: right;
     padding: 3rem; }
   .intro-clinic {
     background-image: url(../img/location-bg.jpg);
     background-size: cover;
+    background-position: right;
     padding: 3rem; }
   .intro-schedule {
     background-image: url(../img/need-help-bg.jpg);
     background-size: cover;
+    background-position: right;
     padding: 3rem; }
   .intro-bottom {
     border-bottom: 2px solid #ffffff;

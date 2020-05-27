@@ -1,77 +1,82 @@
-.navbar-nav {
-    // margin-top: -1rem !important; // obrisi
-    .nav {
-        &-item {
-            display: flex;
-            align-self: center;
-            margin-right: 1rem;
-            position: relative;
+.nav {
+    &-item {
+        display: flex;
+        align-self: center;
+        margin-right: 1rem;
+        position: relative;
+        transition: all .5s;
+        &::after {
+            content: "";
+            display: inline-block;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 2.4rem;
+            margin: auto;
+            margin-right: auto;
+            bottom: 5rem;
+            width: 4px;
+            height: 4px;
+            background-color: transparent;
+            -webkit-transition: width 0.3s;
+            -moz-transition: width 0.3s;
+            -ms-transition: width 0.3s;
+            -o-transition: width 0.3s;
+            transition: width 0.3s;
             transition: all .5s;
-            &::after {
-                content: "";
-                display: inline-block;
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 2.4rem;
-                margin: auto;
-                margin-right: auto;
-                bottom: 5rem;
-                width: 4px;
-                height: 4px;
-                background-color: transparent;
-                -webkit-transition: width 0.3s;
-                -moz-transition: width 0.3s;
-                -ms-transition: width 0.3s;
-                -o-transition: width 0.3s;
-                transition: width 0.3s;
-                transition: all .5s;
-            }
-        }
-        &-link {
-            font-family: $lato;
-            font-size: 1.4rem;
-            height: 3rem;
-            font-weight: 400;
-            color: $color-white;
-            text-transform: uppercase;
-            &:hover {
-                color: $color-blue-dark;
-            }
-            &:active {
-                color: $color-blue-dark;
-            }
-            &:focus {
-                color: $color-blue-dark;
-            }
-            @media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
-                font-size: 1rem;
-            }
-        }
-        &-link:visited>&-item {
-            &::after {
-                background-color: $color-blue-dark;
-            }
-        }
-        &-item &:visited {
-            &-item::after {
-                background-color: $color-blue-dark;
-            }
-        }
-        &-item:hover {
-            &::after {
-                background-color: $color-blue-dark;
-            }
         }
     }
-    .navbar {
-        &-toggler {
-            &-icon {
-                background-image: url(../img/meny.png) !important;
-                background-size: contain;
-                height: 2rem;
-                width: 4rem;
-            }
+    &-link {
+        font-family: $lato;
+        font-size: 1.4rem;
+        height: 3rem;
+        font-weight: 400;
+        color: $color-white;
+        text-transform: uppercase;
+        &:hover {
+            color: $color-blue-dark;
+        }
+        &:active {
+            color: $color-blue-dark;
+        }
+        &:focus {
+            color: $color-blue-dark;
+        }
+        @media screen and (min-width: 991.98px) and (max-width: 1199.98px) {
+            font-size: 1rem;
+        }
+    }
+    &-link:visited>&-item {
+        &::after {
+            background-color: $color-blue-dark;
+        }
+    }
+    &-item &:visited {
+        &-item::after {
+            background-color: $color-blue-dark;
+        }
+    }
+    &-item:hover {
+        &::after {
+            background-color: $color-blue-dark;
+        }
+    }
+}
+
+.navbar {
+    &-nav {
+        @media screen and (max-width: 991.98px) {
+            background-color: $color-blue-dark;
+            border-radius: 3rem;
+            padding: 2rem;
+        }
+    }
+    &-toggler {
+        span {
+            background-image: url(../img/meny.png) !important;
+            background-size: contain;
+            height: 2rem;
+            width: 4rem;
         }
     }
 }
@@ -121,7 +126,7 @@
 img.logo {
     display: inline-block;
     @media screen and (max-width: 479.98px) {
-        width: 18rem;
+        width: 15rem;
         height: auto;
     }
 }
