@@ -325,9 +325,11 @@ a {
     display: inline-flex;
     line-height: 1.8;
     font-size: 1.2rem; }
-  .footer-third-phone a {
-    font-weight: 900;
-    line-height: 3; }
+  .footer-third-phone {
+    margin-left: -11rem; }
+    .footer-third-phone a {
+      font-weight: 900;
+      line-height: 3; }
   .footer-newletter input[type="text"],
   .footer-newletter input[type="email"] {
     font-family: inherit;
@@ -357,7 +359,7 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.5;
-    color: #ffffff;
+    color: #ffffff !important;
     background-color: transparent;
     border: 1px solid transparent;
     margin-top: 0;
@@ -376,6 +378,9 @@ a {
     @media screen and (max-width: 767.98px) {
       .footer-center {
         text-align: center; } }
+
+.nav ul li {
+  list-style: none; }
 
 .nav-item {
   display: flex;
@@ -429,17 +434,25 @@ a {
 .nav-item:hover::after {
   background-color: #00cdf4; }
 
-@media screen and (max-width: 991.98px) {
-  .navbar-nav {
-    background-color: #00cdf4;
-    border-radius: 3rem;
-    padding: 2rem; } }
+.navbar-nav {
+  margin-top: -1rem !important; }
+  @media screen and (max-width: 991.98px) {
+    .navbar-nav {
+      background-color: #00cdf4;
+      border-radius: 3rem;
+      padding: 2rem; } }
 
 .navbar-toggler span {
-  background-image: url(../img/meny.png) !important;
   background-size: contain;
   height: 2rem;
-  width: 4rem; }
+  width: 4rem;
+  margin-top: -1rem !important; }
+
+@media screen and (max-width: 480.98px) {
+  .navbar-brand img {
+    position: absolute;
+    top: 3rem;
+    left: 1rem; } }
 
 .nav-tabs {
   border-bottom: transparent; }
@@ -480,6 +493,14 @@ img.logo {
     img.logo {
       width: 15rem;
       height: auto; } }
+
+.menu-item a {
+  font-family: "Lato", sans-serif;
+  font-size: 1.4rem;
+  height: 3rem;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase; }
 
 input[type="date"]:not(.has-value):before {
   color: lightgray;
